@@ -1,0 +1,6 @@
+{
+  "name": "Analog AI Flow Auditor",
+  "description": "Interactive auditing and business value calculator for chip design teams to evaluate AI CAD tool maturity (Cadence Virtuoso, Synopsys Custom Compiler), compute productivity gaps, and generate customized integration recipes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

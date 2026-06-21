@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-editorial-bg: #F4F2EE;
+  --color-editorial-ink: #1D1D1B;
+  --color-editorial-accent: #1D4ED8; /* blue-700 */
+}
+
+body {
+  background-color: var(--color-editorial-bg);
+  color: var(--color-editorial-ink);
+  font-family: var(--font-sans);
+}
+
+/* Custom crisp classes for the Editorial Theme */
+.editorial-border {
+  border: 1px solid var(--color-editorial-ink);
+}
+
+.editorial-border-double {
+  border: 3px double var(--color-editorial-ink);
+}
+
+.editorial-header-btn {
+  background-color: var(--color-editorial-ink);
+  color: var(--color-editorial-bg);
+  transition: all 0.2s ease;
+}
+
+.editorial-header-btn:hover {
+  background-color: var(--color-editorial-accent);
+  color: #ffffff;
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  header, footer, .print\:hidden, button, select, input[type="range"] {
+    display: none !important;
+  }
+
+  .printable-area {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  pre {
+    background-color: #f8fafc !important;
+    color: #0f172a !important;
+    border: 1px solid #cbd5e1 !important;
+    white-space: pre-wrap !important;
+  }
+}
+
+
